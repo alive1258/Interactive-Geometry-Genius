@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- header section start  -->
     <header
       class="px-4 py-4 rounded-lg ml-4 mr-4 mt-6"
       style="background: rgba(16, 144, 216, 0.1)"
@@ -27,5 +28,150 @@
         </div>
       </div>
     </header>
+    <!-- header section end  -->
+
+    <!-- card section start  -->
+    <section class="ml-4 mr-4 mt-6 flex flex-col md:flex-row lg:flex-row py-8">
+      <div class="w-full lg:w-[75%] mt-5 grid lg:grid-cols-3 gap-4">
+        <!-- Triangle card start  -->
+        <div class="border border-2 py-8 rounded-lg">
+          <div class="flex justify-center pt-8">
+            <img class="w-60 h-48" src="./images/triangle.png" alt="" />
+          </div>
+          <div class="text-center pt-6">
+            <h2>Triangle</h2>
+            <p>Area (A) = 0.5 * b * h</p>
+          </div>
+          <div class="flex justify-center pt-2">
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <span class="p-2">cm</span>
+
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <span class="p-2">cm</span>
+          </div>
+        </div>
+        <!-- Triangle card end  -->
+
+        <!-- Rectangle card start  -->
+
+        <div class="border border-2 py-8 rounded-lg">
+          <div class="flex justify-center pt-8">
+            <img class="w-60 h-48" src="./images/rectangle.png" alt="" />
+          </div>
+          <div class="text-center pt-6">
+            <h2>Rectangle</h2>
+            <p>Area (A) = 0.5 * b * h</p>
+          </div>
+          <div class="flex justify-center pt-2">
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <span class="p-2">cm</span>
+
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <span class="p-2">cm</span>
+          </div>
+        </div>
+        <!-- Rectangle card end  -->
+
+        <!-- Parallelogram card start  -->
+
+        <div class="border border-2 py-8 rounded-lg">
+          <div class="flex justify-center pt-8">
+            <img class="w-60 h-48" src="./images/parallelogram.png" alt="" />
+          </div>
+          <div class="text-center pt-6">
+            <h2>Parallelogram</h2>
+            <p>Area (A) = 0.5 * b * h</p>
+          </div>
+          <div class="flex justify-center pt-2">
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <span class="p-2">cm</span>
+
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <span class="p-2">cm</span>
+          </div>
+        </div>
+        <!-- Parallelogram card end  -->
+
+        <!-- Rhombus card start  -->
+        <div class="border border-2 py-8 rounded-lg">
+          <div class="flex justify-center pt-8">
+            <img class="w-60 h-48" src="./images/triangle.png" alt="" />
+          </div>
+          <div class="text-center pt-6">
+            <h2>Rhombus</h2>
+            <p>Area (A) = 0.5 * b * h</p>
+          </div>
+          <div class="flex justify-center pt-2">
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <span class="p-2">cm</span>
+
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <span class="p-2">cm</span>
+          </div>
+        </div>
+        <!-- Rhombus card end  -->
+
+        <!-- Pentagon card start  -->
+        <div class="border border-2 py-8 rounded-lg">
+          <div class="flex justify-center pt-8">
+            <img class="w-60 h-48" src="./images/pentagon.png" alt="" />
+          </div>
+          <div class="text-center pt-6">
+            <h2>Pentagon</h2>
+            <p>Area (A) = 0.5 * b * h</p>
+          </div>
+          <div class="flex justify-center pt-2">
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <span class="p-2">cm</span>
+
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <span class="p-2">cm</span>
+          </div>
+        </div>
+        <!-- Pentagon card end  -->
+
+        <!-- Ellipse card start  -->
+        <div class="border border-2 py-8 rounded-lg">
+          <div class="flex justify-center pt-8">
+            <img class="w-60 h-48" src="./images/ellipse.png" alt="" />
+          </div>
+          <div class="text-center pt-6">
+            <h2>Ellipse</h2>
+            <p>Area (A) = 0.5 * b * h</p>
+          </div>
+          <div class="flex justify-center pt-2">
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <span class="p-2">cm</span>
+
+            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <span class="p-2">cm</span>
+          </div>
+        </div>
+         <!-- Ellipse card end  -->
+      </div>
+
+  
+    </div>
+        <!-- Area Calculation section start  -->
+
+        <div class="border rounded-lg h-96 pt-8 border-2 lg:flex lg:flex-col lg:ml-4 mt-6 lg:w-[24%]">
+          <h2 class="text-center text-xl font-bold underline text-[#111111]">Area Calculation </h2>
+          <div>
+            <tbody id="table-container">
+              <!-- <tr>
+                <th>1</th>
+                <td>Cy Ganderton</td>
+                <td>Quality Control Specialist</td>
+                <td>Blue</td>
+              </tr> -->
+            </tbody>
+          </div>
+    
+      </div>
+        <!-- Area Calculation section end -->
+
+     
+    </section>
+   
   </body>
 </html>

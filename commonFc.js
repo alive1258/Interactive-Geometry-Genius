@@ -41,7 +41,7 @@ function areaCalculation(names, total) {
       <td>${names}</td>
       <td>${total}cm<sup>2</sup></td>
       <td>
-      <button class="btn btn-sm btn-red-500" >Square</button>
+      <button style="background:#1090D8; color:white; padding:4px;border-radius:4px" >Covert to m<sup>2</sup></button>
       </td>
   
   `;
@@ -121,4 +121,3 @@ document.getElementById("card-6").addEventListener("mouseleave", function () {
   document.getElementById("card-6").style.background =
     colors[Math.floor(Math.random() * colors.length)];
 });
-

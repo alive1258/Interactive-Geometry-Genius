@@ -54,3 +54,40 @@ document
     }
     areaCalculation(productName, totalPrice.toFixed(2));
   });
+
+//Parallelogram
+document
+  .getElementById("parallelogramCalculate")
+  .addEventListener("click", function () {
+    serial += 1;
+
+    const productName = document.getElementById("title-3").innerText;
+
+    const firstElementParallelogram = getFirstElementValueById(
+      "parallelogram-first-value"
+    );
+
+    const secondElementParallelogram = getSecondElementValueById(
+      "parallelogram-second-value"
+    );
+    const totalPrice = firstElementParallelogram * secondElementParallelogram;
+
+    areaCalculation(productName, totalPrice.toFixed(2));
+  });
+// Rhombus
+document
+  .getElementById("rhombusCalculate")
+  .addEventListener("click", function () {
+    serial += 1;
+
+    const productName = document.getElementById("title-4").innerText;
+
+    const firstElementRhombus = getFirstElementValueById("rhombus-first-value");
+
+    const secondElementRhombus = getSecondElementValueById(
+      "rhombus-second-value"
+    );
+    const totalPrice = 0.5 * firstElementRhombus * secondElementRhombus;
+
+    areaCalculation(productName, totalPrice.toFixed(2));
+  });

@@ -17,6 +17,7 @@ function getSecondInputFieldValueById(secondInputFieldId) {
   return secondInputFieldValue;
 }
 
+
 //   all areaCalculation
 
 function areaCalculation(names, total) {

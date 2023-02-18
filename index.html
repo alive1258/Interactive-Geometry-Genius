@@ -7,6 +7,8 @@
     <title>Interactive Geometry Genius</title>
     <!-- tailwind css linkup  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome kit linkup  -->
+    <script src="https://kit.fontawesome.com/c7aec047ee.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- header section start  -->
@@ -21,6 +23,7 @@
         </div>
         <div>
           <button
+        id="blog-btn"
             class="bg-[#1090D8] text-white px-6 py-2 rounded-lg font-semibold"
           >
             Blog
@@ -34,117 +37,171 @@
     <section class="ml-4 mr-4 mt-6 flex flex-col md:flex-row lg:flex-row py-8">
       <div class="w-full lg:w-[75%] mt-5 grid lg:grid-cols-3 gap-4">
         <!-- Triangle card start  -->
-        <div class="border border-2 py-8 rounded-lg">
-          <div class="flex justify-center pt-8">
+        <div id="card-1"  class="border border-2 py-8 rounded-lg ">
+          <div  class="flex justify-center pt-8">
             <img class="w-60 h-48" src="./images/triangle.png" alt="" />
           </div>
           <div class="text-center pt-6">
-            <h2>Triangle</h2>
-            <p>Area (A) = 0.5 * b * h</p>
+            <h2 id="title-1">Triangle</h2>
+            <p>Area (A) = 0.5 <i class="fas fa-xmark"></i> b <i class="fas fa-xmark"></i> h</p>
           </div>
           <div class="flex justify-center pt-2">
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <input id="first-input" class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
             <span class="p-2">cm</span>
 
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <input id="second-input" class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
             <span class="p-2">cm</span>
+          </div>
+          <div class="pt-6 px-8">
+            <button
+            id="triangleCalculate"
+              class="bg-[#1090D8] text-white px-6 py-4 w-full rounded-lg font-semibold"
+            >
+            Calculate
+            </button>
           </div>
         </div>
         <!-- Triangle card end  -->
 
         <!-- Rectangle card start  -->
 
-        <div class="border border-2 py-8 rounded-lg">
+        <div id="card-2" class="border border-2 py-8 rounded-lg">
           <div class="flex justify-center pt-8">
             <img class="w-60 h-48" src="./images/rectangle.png" alt="" />
           </div>
           <div class="text-center pt-6">
-            <h2>Rectangle</h2>
-            <p>Area (A) = 0.5 * b * h</p>
+            <h2 id="title-2">Rectangle</h2>
+            <p>Area (A) = w <i class="fas fa-xmark"></i> l</p>
           </div>
           <div class="flex justify-center pt-2">
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
+            <input id="Rectangle-first-input"  class="w-1/4 bg-gray-200 px-2" type="text" placeholder="w" />
             <span class="p-2">cm</span>
 
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
+            <input  id="Rectangle-second-input" class="w-1/4 bg-gray-200 px-2" type="text" placeholder="l" />
             <span class="p-2">cm</span>
+          </div>
+          <div class="pt-6 px-8">
+            <button
+            id="rectangleCalculate"
+              class="bg-[#1090D8] text-white px-6 py-4 w-full rounded-lg font-semibold"
+            >
+            Calculate
+            </button>
           </div>
         </div>
         <!-- Rectangle card end  -->
 
         <!-- Parallelogram card start  -->
 
-        <div class="border border-2 py-8 rounded-lg">
+        <div id="card-3" class="border border-2 py-8 rounded-lg">
           <div class="flex justify-center pt-8">
             <img class="w-60 h-48" src="./images/parallelogram.png" alt="" />
           </div>
           <div class="text-center pt-6">
-            <h2>Parallelogram</h2>
-            <p>Area (A) = 0.5 * b * h</p>
+            <h2 id="title-3">Parallelogram</h2>
+            <p>Area (A) =  b <i class="fas fa-xmark"></i> h</p>
           </div>
           <div class="flex justify-center pt-2">
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
-            <span class="p-2">cm</span>
-
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
-            <span class="p-2">cm</span>
+          
+              p =<span id="parallelogram-first-value">10                          </span>cm,
+               b = <span id="parallelogram-second-value">12</span>cm
+             
+          </div>
+          <div class="pt-6 px-8">
+            <button
+            id="parallelogramCalculate"
+              class="bg-[#1090D8] text-white px-6 py-4 w-full rounded-lg font-semibold"
+            >
+            Calculate
+            </button>
           </div>
         </div>
         <!-- Parallelogram card end  -->
 
         <!-- Rhombus card start  -->
-        <div class="border border-2 py-8 rounded-lg">
+        <div id="card-4" class="border border-2 py-8 rounded-lg">
           <div class="flex justify-center pt-8">
             <img class="w-60 h-48" src="./images/triangle.png" alt="" />
           </div>
           <div class="text-center pt-6">
-            <h2>Rhombus</h2>
-            <p>Area (A) = 0.5 * b * h</p>
+            <h2 id="title-4">Rhombus</h2>
+            <p>Area (A) = 0.5 <i class="fas fa-xmark"></i> d<sub>1</sub> <i class="fas fa-xmark"></i> d<sub>2</sub2></p>
           </div>
-          <div class="flex justify-center pt-2">
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
-            <span class="p-2">cm</span>
-
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
-            <span class="p-2">cm</span>
+          <div class="flex justify-center gap-2 pt-2">
+          <div>
+            d<sub>1</sub> = <span id="rhombus-first-value">16</span>cm
+          </div>
+           <div>
+            d<sub>2</sub> = <span id="rhombus-second-value">8</span>cm
+           </div>
+          </div>
+          <div class="pt-6 px-8">
+            <button
+            id="rhombusCalculate"
+              class="bg-[#1090D8] text-white px-6 py-4 w-full rounded-lg font-semibold"
+            >
+            Calculate
+            </button>
           </div>
         </div>
         <!-- Rhombus card end  -->
 
         <!-- Pentagon card start  -->
-        <div class="border border-2 py-8 rounded-lg">
+        <div id="card-5" class="border border-2 py-8 rounded-lg">
           <div class="flex justify-center pt-8">
             <img class="w-60 h-48" src="./images/pentagon.png" alt="" />
           </div>
           <div class="text-center pt-6">
-            <h2>Pentagon</h2>
-            <p>Area (A) = 0.5 * b * h</p>
+            <h2 id="title-5">Pentagon</h2>
+            <p>Area (A) = 0.5 <i class="fas fa-xmark"></i> p <i class="fas fa-xmark"></i> b</p>
           </div>
           <div class="flex justify-center pt-2">
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
-            <span class="p-2">cm</span>
-
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
-            <span class="p-2">cm</span>
+         p =<span id="pentagon-first-value">6</span>cm,
+          b =<span id="pentagon-second-value">10</span>cm
+          </div>
+          <div class="pt-6 px-8">
+            <button
+            id="pentagonCalculate"
+            
+              class="bg-[#1090D8] text-white px-6 py-4 w-full rounded-lg font-semibold"
+            >
+            Calculate
+            </button>
           </div>
         </div>
         <!-- Pentagon card end  -->
 
         <!-- Ellipse card start  -->
-        <div class="border border-2 py-8 rounded-lg">
+        <div id="card-6" class="border border-2 py-8 rounded-lg">
           <div class="flex justify-center pt-8">
             <img class="w-60 h-48" src="./images/ellipse.png" alt="" />
           </div>
           <div class="text-center pt-6">
-            <h2>Ellipse</h2>
-            <p>Area (A) = 0.5 * b * h</p>
+            <h2 id="title-6">Ellipse</h2>
+          
+
+              <div class="flex text-center justify-center ">
+                <div>
+                  Area (A) =
+                </div>
+                <div>
+                  <img class="w-4 h-3 mt-2 ml-2" src="./images/pi.png" alt="">
+                </div>
+                ab
+              </div>
+           
           </div>
           <div class="flex justify-center pt-2">
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="b" />
-            <span class="p-2">cm</span>
-
-            <input class="w-1/4 bg-gray-200 px-2" type="text" placeholder="h" />
-            <span class="p-2">cm</span>
+          a = <span id="ellipse-first-value">10</span>cm, 
+          b = <span id="ellipse-second-value">4</span>cm
+          </div>
+          <div class="pt-6 px-8">
+            <button
+            id="ellipseCalculate"
+              class="bg-[#1090D8] text-white px-6 py-4 w-full rounded-lg font-semibold"
+            >
+            Calculate
+            </button>
           </div>
         </div>
          <!-- Ellipse card end  -->
@@ -154,16 +211,13 @@
     </div>
         <!-- Area Calculation section start  -->
 
-        <div class="border rounded-lg h-96 pt-8 border-2 lg:flex lg:flex-col lg:ml-4 mt-6 lg:w-[24%]">
+        <div class="border rounded-lg h-96  pt-6 border-2 lg:flex lg:flex-col lg:ml-4 mt-6 lg:w-[24%]">
           <h2 class="text-center text-xl font-bold underline text-[#111111]">Area Calculation </h2>
-          <div>
+          <div class=" pl-4">
+            <table class="table w-full">
+    
             <tbody id="table-container">
-              <!-- <tr>
-                <th>1</th>
-                <td>Cy Ganderton</td>
-                <td>Quality Control Specialist</td>
-                <td>Blue</td>
-              </tr> -->
+        
             </tbody>
           </div>
     
@@ -172,6 +226,8 @@
 
      
     </section>
+    <script src="./commonFc.js"></script>
+    <script src="./interactive.js"></script>
    
   </body>
 </html>
